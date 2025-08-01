@@ -4,5 +4,5 @@ html {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(14, 14, 36);
+  background-color: oklch(20.8% 0.042 265.755);
 }

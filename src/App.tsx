@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar/Navbar";
+import MainPage from "./pages/MainPage";
+
 function App() {
   return (
-    <div className="text-white flex">
-      MAX<span className="font-[Bitcount] text-lg">CINEMA</span>
-    </div>
+    <>
+      <Navbar />
+      <MainPage />
+    </>
   );
 }
 
