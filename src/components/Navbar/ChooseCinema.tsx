@@ -4,7 +4,7 @@ const ChooseCinema = () => {
   return (
     <div className="flex text-white cursor-pointer">
       <MapPin />
-      Choose your Cinema!
+      <span className="hidden lg:inline">Choose your Cinema!</span>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between shadow-sm shadow-white h-[8rem]">
       <Logo />
-      <div className="flex w-[60%] justify-around items-center h-full mr-[10svw]">
+      <div className="flex w-[60%] justify-around items-center h-full mr-[2svw] sm:[12svw] lg:w-[60%] sm:w-[40%]">
         <ChooseCinema />
         <AccountNav />
         <SearchBar />
