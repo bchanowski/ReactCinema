@@ -7,7 +7,7 @@ const SearchBar = () => {
         placeholder="Search..."
         className="border rounded-md border-white p-[0.2rem] w-full ease-out duration-500 hover:text-lg hover:p-[0.3rem] "
       />
-      <Search className="absolute left-[80%] cursor-pointer sm:left-[85%]" />
+      <Search className="absolute left-[75%] sm:left-[80%] cursor-pointer md:left-[85%]" />
     </div>
   );
 };

@@ -43,7 +43,7 @@ export const categoriesList: TCategory[] = [
   },
   {
     id: 6,
-    name: "Food & Drinks",
+    name: "Food Menu",
     options: {
       hasOptions: false,
       option: [],
