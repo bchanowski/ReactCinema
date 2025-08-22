@@ -22,7 +22,14 @@ export const categoriesList: TCategory[] = [
     name: "Events",
     options: {
       hasOptions: true,
-      option: [],
+      option: [
+        "Football",
+        "Concerts",
+        "Marathons",
+        "Premiers",
+        "Festivals",
+        "Throwbacks",
+      ],
     },
   },
   {
@@ -30,7 +37,7 @@ export const categoriesList: TCategory[] = [
     name: "News",
     options: {
       hasOptions: true,
-      option: [],
+      option: ["Promotions", "Previews", "Reviews", "Annoucments"],
     },
   },
   {
@@ -38,7 +45,7 @@ export const categoriesList: TCategory[] = [
     name: "Schools",
     options: {
       hasOptions: true,
-      option: [],
+      option: ["Faculties", "Workshops", "Movies", "Education"],
     },
   },
   {
@@ -54,7 +61,7 @@ export const categoriesList: TCategory[] = [
     name: "More",
     options: {
       hasOptions: true,
-      option: [],
+      option: ["Ads", "Renting", "Returns", "Careers", "Locals", "Contact"],
     },
   },
 ];
