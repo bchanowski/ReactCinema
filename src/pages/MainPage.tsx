@@ -1,5 +1,11 @@
+import MoviesCarousel from "../components/MoviesCarousel/MoviesCarousel";
+
 const MainPage = () => {
-  return <div>MainPage</div>;
+  return (
+    <div>
+      <MoviesCarousel />
+    </div>
+  );
 };
 
 export default MainPage;

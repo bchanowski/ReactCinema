@@ -6,3 +6,15 @@ html {
   font-style: normal;
   background-color: oklch(20.8% 0.042 265.755);
 }
+
+@theme {
+  --animate-slide: slide 0.3s ease-out;
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+}
