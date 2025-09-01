@@ -1,4 +1,4 @@
-import type { TCategory } from "../../types/CategoryInterface";
+import type { TCategory } from "../../types/CategoryType";
 import { categoriesList } from "../../data/categoriesList";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";

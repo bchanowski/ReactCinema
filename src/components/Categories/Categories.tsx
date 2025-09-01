@@ -9,7 +9,7 @@ const Categories = () => {
   return (
     <div className="flex h-[70px] justify-center items-center px-[1svw] md:px-[8svw] lg:px-[15svw] text-xl bg-sky-50">
       {categoriesList.map((category, index) => (
-        <Category category={category} index={index} />
+        <Category category={category} index={index} key={"key_" + index} />
       ))}
       <span
         className="flex items-center sm:hidden cursor-pointer"

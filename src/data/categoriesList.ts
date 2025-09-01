@@ -1,4 +1,4 @@
-import type { TCategory } from "../types/CategoryInterface";
+import type { TCategory } from "../types/CategoryType";
 
 export const categoriesList: TCategory[] = [
   {

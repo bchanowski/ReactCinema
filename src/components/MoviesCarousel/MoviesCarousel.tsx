@@ -1,3 +1,7 @@
+import { useQuery } from "@tanstack/react-query";
+import { getPopularMovies } from "../../api/GetMovies";
+import type { TMovie } from "../../types/MovieType";
+
 const MoviesCarousel = () => {
   const data = [
     "abc",
@@ -12,6 +16,11 @@ const MoviesCarousel = () => {
     "456",
     "789",
   ];
+  const { data: populatMovieData, isLoading } = useQuery<TMovie[]>({
+    queryKey: ["populatMovieData"],
+    queryFn: () => getPopularMovies(),
+  });
+
   return (
     <div className="overflow-hidden relative h-[250px] w-full">
       <div
@@ -35,6 +44,8 @@ const MoviesCarousel = () => {
           </div>
         ))}
       </div>
+      {populatMovieData && <p>{populatMovieData[0].poster_path}</p>}
+      {isLoading && <p>loading</p>}
     </div>
   );
 };
