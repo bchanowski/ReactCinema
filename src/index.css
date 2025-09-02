@@ -1,20 +1,23 @@
 @import "tailwindcss";
 
+@theme {
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  --animate-slide: slide 80s linear infinite;
+}
+
 html {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: oklch(20.8% 0.042 265.755);
-}
-
-@theme {
-  --animate-slide: slide 0.3s ease-out;
-  @keyframes slide {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100%;
-    }
-  }
 }
