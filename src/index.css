@@ -12,7 +12,7 @@
       left: 0%;
     }
   }
-  --animate-slide: slide 80s linear infinite;
+  --animate-slide: slide 150s linear infinite;
 }
 
 html {

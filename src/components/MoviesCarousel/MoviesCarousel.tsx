@@ -10,12 +10,20 @@ const MoviesCarousel = () => {
   });
 
   return (
-    <div className="overflow-hidden relative h-[250px] w-full">
+    <div className="overflow-hidden relative h-[500px] w-full">
       <div className="flex absolute left-[0px] justify-center items-center h-full w-[200%] animate-slide">
         {isLoading ? (
           "test"
         ) : (
           <>
+            {populatMovieData &&
+              populatMovieData.map((option, index) => (
+                <MoviePoster url={option.poster_path} key={index} />
+              ))}
+            {populatMovieData &&
+              populatMovieData.map((option, index) => (
+                <MoviePoster url={option.poster_path} key={index} />
+              ))}
             {populatMovieData &&
               populatMovieData.map((option, index) => (
                 <MoviePoster url={option.poster_path} key={index} />
