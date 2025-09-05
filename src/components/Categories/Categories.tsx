@@ -7,7 +7,7 @@ import Category from "./Category";
 const Categories = () => {
   const [openMobile, setOpenMobile] = useState(false);
   return (
-    <div className="flex h-[70px] justify-center items-center px-[1svw] md:px-[8svw] lg:px-[15svw] text-xl bg-sky-50">
+    <div className="flex h-[70px] justify-center items-center px-[1svw] md:px-[8svw] lg:px-[15svw] text-xl bg-sky-50 mb-[25px]">
       {categoriesList.map((category, index) => (
         <Category category={category} index={index} key={"key_" + index} />
       ))}
