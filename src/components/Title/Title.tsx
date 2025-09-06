@@ -5,12 +5,12 @@ type Props = {
 
 const Title = ({ text, side }: Props) => {
   let sideStyle = "";
-  if (side === "right") sideStyle = "mr-[6svw] text-end";
-  else sideStyle = "ml-[6svw]";
+  if (side === "right") sideStyle = "text-end";
+  else sideStyle = "";
   return (
     <p
       className={
-        "text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-[Roboto_Flex] " +
+        "text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-[Roboto_Flex] " +
         sideStyle
       }
     >
