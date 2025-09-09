@@ -1,3 +1,4 @@
+import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import EventBtn from "./EventBtn";
 
 type Props = {
@@ -10,6 +11,7 @@ type Props = {
 const EventCard = ({ poster_path, desc, when, title }: Props) => {
   return (
     <div className="hidden relative w-full h-full sm:flex justify-center items-center">
+      <CircleArrowLeft className="h-[10%] sm:w-[10%] text-white m-1 cursor-pointer" />
       <div className="h-[70%] w-[80%] 2xl:w-[70%] bg-sky-50 rounded-lg flex items-end flex-col">
         <p className="text-center text-black text-3xl m-[25px] w-[60%] h-[15%]">
           {title.toUpperCase()}
@@ -24,8 +26,9 @@ const EventCard = ({ poster_path, desc, when, title }: Props) => {
       </div>
       <img
         src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
-        className="absolute left-0 2xl:left-[40px] top-[35px] lg:top-[15px] h-[45%] lg:h-[50%] rounded-lg"
+        className="absolute left-[70px] 2xl:left-[115px] top-[40px] lg:top-[20px] h-[40%] lg:h-[50%] rounded-lg"
       />
+      <CircleArrowRight className="h-[10%] sm:w-[10%] text-white m-1 cursor-pointer" />
     </div>
   );
 };
