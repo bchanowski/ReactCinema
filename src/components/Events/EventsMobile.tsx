@@ -42,7 +42,10 @@ const EventsMobile = ({ poster_path, title }: Props) => {
 
   const nextSlide = () => {
     if (sliderRef.current) {
-      const newPosition = Math.min(currentPosition + itemWidth * 1, maxScroll);
+      const newPosition = Math.min(
+        currentPosition + itemWidth * 1.2,
+        maxScroll
+      );
       sliderRef.current.scrollTo({
         left: newPosition,
         behavior: "smooth",
@@ -53,7 +56,7 @@ const EventsMobile = ({ poster_path, title }: Props) => {
 
   const prevSlide = () => {
     if (sliderRef.current) {
-      const newPosition = Math.max(currentPosition - itemWidth * 1, 0);
+      const newPosition = Math.max(currentPosition - itemWidth * 1.2, 0);
       sliderRef.current.scrollTo({
         left: newPosition,
         behavior: "smooth",
@@ -62,25 +65,28 @@ const EventsMobile = ({ poster_path, title }: Props) => {
     }
   };
   return (
-    <div className="sm:hidden h-full w-full relative ml-5 flex">
+    <div className="sm:hidden h-full w-full relative flex">
       {currentPosition !== 0 ? (
         <CircleArrowLeft
-          className="h-[20%] w-[20%] text-white m-2 absolute"
+          className="h-[15%] w-[15%] text-white m-0.5 absolute top-[30%]"
           onClick={prevSlide}
         />
       ) : (
         <></>
       )}
-      <div className="flex w-full overflow-hidden h-full" ref={sliderRef}>
+      <div
+        className="flex w-[80%] overflow-hidden h-full ml-15"
+        ref={sliderRef}
+      >
         {list.map((nm, index) => (
           <div
-            className="flex flex-col m-5 cursor-pointer w-[100px] h-full flex-shrink-0"
+            className="flex flex-col m-5 cursor-pointer w-[120px] h-full flex-shrink-0"
             key={index}
             id="event_id"
           >
             <img
               src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
-              className="h-[60%] w-[150px] rounded-lg"
+              className="h-[60%] w-full rounded-lg"
             />
             <p className="text-white">{title}</p>
           </div>
@@ -88,7 +94,7 @@ const EventsMobile = ({ poster_path, title }: Props) => {
       </div>
       {currentPosition !== maxScroll ? (
         <CircleArrowRight
-          className="h-[20%] w-[20%] text-white m-2 absolute left-[150px] top-0"
+          className="h-[15%] w-[15%] text-white m-0.5 absolute top-[30%] right-0"
           onClick={nextSlide}
         />
       ) : (
