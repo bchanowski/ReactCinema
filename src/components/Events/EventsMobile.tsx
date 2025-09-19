@@ -80,7 +80,7 @@ const EventsMobile = ({ poster_path, title }: Props) => {
       >
         {list.map((nm, index) => (
           <div
-            className="flex flex-col m-5 cursor-pointer w-[120px] h-full flex-shrink-0"
+            className="flex flex-col m-5 cursor-pointer w-[135px] h-full flex-shrink-0"
             key={index}
             id="event_id"
           >
