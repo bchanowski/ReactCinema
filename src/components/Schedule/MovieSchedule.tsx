@@ -1,4 +1,5 @@
 import Title from "../Title/Title";
+import DatePicker from "./DatePicker";
 
 const MovieSchedule = () => {
   return (
@@ -9,6 +10,7 @@ const MovieSchedule = () => {
           <p>Now Playing! Location Cinema</p>
           <p>Next weeks schedule every Monday ay 5PM!</p>
         </div>
+        <DatePicker />
       </div>
     </div>
   );
