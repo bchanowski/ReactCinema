@@ -3,7 +3,7 @@ import DatePicker from "./DatePicker";
 
 const MovieSchedule = () => {
   return (
-    <div className="w-full sm:w-[635px] md:w-[1024px] xl:w-[1200px] 2xl:w-[1400px] flex justify-center">
+    <div className="w-full sm:w-[635px] md:w-[1024px] xl:w-[1200px] 2xl:w-[1400px] flex justify-center relative">
       <div className="w-[80%] h-[300px] bg-sky-50 rounded-lg">
         <div className="flex justify-center flex-col h-full ml-5 w-[60%]">
           <Title text="CURRENT SCHEDULE" side="left" color="black" />
