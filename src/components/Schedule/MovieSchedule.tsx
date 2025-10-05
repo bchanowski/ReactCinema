@@ -1,5 +1,6 @@
 import Title from "../Title/Title";
 import DatePicker from "./DatePicker";
+import ScheduleList from "./ScheduleList";
 
 const MovieSchedule = () => {
   return (
@@ -11,6 +12,7 @@ const MovieSchedule = () => {
           <p>Next weeks schedule every Monday ay 5PM!</p>
         </div>
         <DatePicker />
+        <ScheduleList />
       </div>
     </div>
   );

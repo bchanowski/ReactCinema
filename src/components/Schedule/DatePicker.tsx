@@ -1,3 +1,5 @@
+import { useDateStore } from "../../hooks/useDataStore";
+
 const dates: Date[] = [];
 
 for (let i = 0; i < 7; i++) {
@@ -7,6 +9,7 @@ for (let i = 0; i < 7; i++) {
 }
 
 const DatePicker = () => {
+  const setDate = useDateStore((state) => state.setDate);
   return (
     <div className="flex w-[805px] h-[140px] justify-between bg-red-700 rounded-lg absolute left-130 top-50 text-white">
       {dates.map((date, index) => (
@@ -17,6 +20,7 @@ const DatePicker = () => {
             (index !== 6 ? "border-r-1" : "rounded-br-lg rounded-tr-lg") +
             (index === 0 ? " rounded-bl-lg rounded-tl-lg" : "")
           }
+          onClick={() => setDate(date)}
         >
           {date.toLocaleDateString("eng", { weekday: "long" })}{" "}
           <p className="text-center">
