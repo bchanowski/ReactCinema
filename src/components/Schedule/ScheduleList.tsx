@@ -1,16 +1,17 @@
 import { useDateStore } from "../../hooks/useDataStore";
+import { scheduleList } from "../../data/scheduleList";
+import MoviePanel from "./MoviePanel";
 
 const ScheduleList = () => {
   const date = useDateStore((state) => state.date);
   return (
-    <div className="text-white">
-      ScheduleList:{" "}
+    <div className="text-white bg-blue-100 rounded-l mt-6">
       {date && (
         <div className="animate-slideUp" key={date.toISOString()}>
           <p>
-            {String(date.getDate()).padStart(2, "0")}
-            <br />
-            {date.toLocaleString("eng", { month: "long" })}
+            {scheduleList[date.getDay()].movies.map((movie, index) => (
+              <MoviePanel key={index} movie={movie} />
+            ))}
           </p>
         </div>
       )}
