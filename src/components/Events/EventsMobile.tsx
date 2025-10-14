@@ -74,10 +74,7 @@ const EventsMobile = ({ poster_path, title }: Props) => {
       ) : (
         <></>
       )}
-      <div
-        className="flex w-[80%] overflow-hidden h-full ml-15"
-        ref={sliderRef}
-      >
+      <div className="flex w-[80%] overflow-hidden h-full ml-5" ref={sliderRef}>
         {list.map((nm, index) => (
           <div
             className="flex flex-col m-5 cursor-pointer w-[135px] h-full flex-shrink-0"
@@ -86,7 +83,7 @@ const EventsMobile = ({ poster_path, title }: Props) => {
           >
             <img
               src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
-              className="h-[60%] w-full rounded-lg"
+              className="h-[200px] w-full rounded-lg"
             />
             <p className="text-white">{title}</p>
           </div>
