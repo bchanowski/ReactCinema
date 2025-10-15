@@ -1,5 +1,6 @@
 import EventsSlider from "../components/Events/EventsSlider";
 import MoviesCarousel from "../components/MoviesCarousel/MoviesCarousel";
+import NewsSection from "../components/News/NewsSection";
 import MovieSchedule from "../components/Schedule/MovieSchedule";
 import Title from "../components/Title/Title";
 
@@ -15,6 +16,7 @@ const MainPage = () => {
       </div>
       {/*<MoviesCarousel />*/}
       <MovieSchedule />
+      <NewsSection />
     </div>
   );
 };
