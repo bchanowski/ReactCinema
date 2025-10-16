@@ -27,16 +27,43 @@
   --animate-slideUp: slideUp 0.5s ease-out;
 
   @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
+
+body {
+  --sb-track-color: #1d1d1d;
+  --sb-thumb-color: oklch(50.5% 0.213 27.518);
+  --sb-size: 12px;
 }
 
+::-webkit-scrollbar {
+  --sb-track-color: #1d1d1d;
+  --sb-thumb-color: oklch(50.5% 0.213 27.518);
+  --sb-size: 12px;
+  width: var(--sb-size);
+}
 
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
 
 html {
   font-family: "M PLUS Rounded 1c", sans-serif;

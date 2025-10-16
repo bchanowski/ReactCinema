@@ -1,11 +1,11 @@
-type Props = {};
+type Props = { title: string; desc: string };
 
-const News = (props: Props) => {
+const News = ({ title, desc }: Props) => {
   return (
-    <div className="bg-sky-50 text-black w-[75%] rounded-lg mt-10 h-[80px] text-xl p-5 flex items-center font-bold">
-      News
-      <p className="font-normal ml-5 text-sm wrap-break-word">
-        Description of this news
+    <div className="bg-sky-50 text-black w-[95%] rounded-lg mt-5 h-[80px] text-sm sm:text-md md:text-lg lg:text-xl p-5 flex items-center font-bold cursor-pointer whitespace-nowrap">
+      {title}
+      <p className="font-normal ml-5 text-[10px] lg:text-sm md:whitespace-pre-line overflow-hidden text-ellipsis font-sans">
+        {desc}
       </p>
     </div>
   );

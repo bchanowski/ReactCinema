@@ -1,10 +1,8 @@
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { currentEvents } from "../../data/currentEvents.ts";
 
-type Props = { poster_path: string; title: string };
-
-const EventsMobile = ({ poster_path, title }: Props) => {
-  const list = [1, 2, 3, 4, 5, 6, 7];
+const EventsMobile = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
   const [currentPosition, setCurrentPosition] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
@@ -75,17 +73,17 @@ const EventsMobile = ({ poster_path, title }: Props) => {
         <></>
       )}
       <div className="flex w-[80%] overflow-hidden h-full ml-5" ref={sliderRef}>
-        {list.map((nm, index) => (
+        {currentEvents.map((event, index) => (
           <div
             className="flex flex-col m-5 cursor-pointer w-[135px] h-full flex-shrink-0"
             key={index}
             id="event_id"
           >
             <img
-              src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
+              src={"https://image.tmdb.org/t/p/w500/" + event.poster_path}
               className="h-[200px] w-full rounded-lg"
             />
-            <p className="text-white">{title}</p>
+            <p className="text-white">{event.title}</p>
           </div>
         ))}
       </div>
