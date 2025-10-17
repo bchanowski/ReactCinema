@@ -3,6 +3,7 @@ import MoviesCarousel from "../components/MoviesCarousel/MoviesCarousel";
 import NewsSection from "../components/News/NewsSection";
 import MovieSchedule from "../components/Schedule/MovieSchedule";
 import Title from "../components/Title/Title";
+import Upcoming from "../components/Upcoming/Upcoming";
 
 const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ const MainPage = () => {
       {/*<MoviesCarousel />*/}
       <MovieSchedule />
       <NewsSection />
+      <Upcoming />
     </div>
   );
 };
