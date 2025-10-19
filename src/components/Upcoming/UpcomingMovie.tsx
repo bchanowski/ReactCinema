@@ -1,5 +1,6 @@
 import { CirclePlay } from "lucide-react";
 import { useState } from "react";
+import MovieTrailer from "./MovieTrailer";
 
 type Props = {
   movie: {
@@ -12,12 +13,19 @@ type Props = {
 
 const UpcomingMovie = ({ movie }: Props) => {
   const [showPlay, setShowPlay] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <div className="w-[200px] h-[380px] mr-10 flex-shrink-0">
       <div
         className="relative h-[300px] w-[200px]"
         onMouseEnter={() => setShowPlay(true)}
         onMouseLeave={() => setShowPlay(false)}
+        onClick={() => {
+          setOpen(true);
+          if (typeof window != "undefined" && window.document) {
+            document.body.style.overflow = "hidden";
+          }
+        }}
       >
         <img
           src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
@@ -39,6 +47,9 @@ const UpcomingMovie = ({ movie }: Props) => {
         <p>{movie.title}</p>
         <p>{movie.date}</p>
       </div>
+      {open && (
+        <MovieTrailer link={movie.trailer_link} close={() => setOpen(false)} />
+      )}
     </div>
   );
 };
