@@ -1,7 +1,7 @@
 export const upcomingMovies = [
   {
     poster_path: "z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
-    trailer_link: "https://www.youtube.com/watch?v=fsQgc9pCyDU",
+    trailer_link: "fsQgc9pCyDU",
     date: "23.05.2025",
     title: "Mission: Impossible - The Final Reckoning",
   },
@@ -31,7 +31,7 @@ export const upcomingMovies = [
   },
   {
     poster_path: "9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
-    trailer_link: "69ffwl-8pCU",
+    trailer_link: "8yh9BPUBbbQ",
     date: "27.06.2025",
     title: "F1",
   },

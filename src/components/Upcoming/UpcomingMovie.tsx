@@ -43,8 +43,8 @@ const UpcomingMovie = ({ movie }: Props) => {
           }
         />
       </div>
-      <div className="flex flex-col h-[70px] justify-between">
-        <p>{movie.title}</p>
+      <div className="flex flex-col h-[75px] justify-between items-center text-center">
+        <p className="text-wrap overflow-hidden">{movie.title}</p>
         <p>{movie.date}</p>
       </div>
       {open && (

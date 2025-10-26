@@ -1,4 +1,4 @@
-import { useDateStore } from "../../hooks/useDataStore";
+import { useDateStore } from "../../hooks/useDateStore";
 import { scheduleList } from "../../data/scheduleList";
 import MoviePanel from "./MoviePanel";
 
