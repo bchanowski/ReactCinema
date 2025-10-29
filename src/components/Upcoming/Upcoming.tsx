@@ -5,7 +5,7 @@ const Upcoming = () => {
   return (
     <div className="w-full sm:w-[635px] md:w-[760px] lg:w-[1024px] xl:w-[1200px] 2xl:w-[1400px] h-[500px] flex items-center text-white mt-10 flex-col relative">
       <div className="w-[80%] h-[80px] flex justify-between items-start tracking-wide">
-        <p className="text-4xl flex items-center h-[40px]">
+        <p className="text-xl md:text-4xl flex items-center h-[40px]">
           UPCOMING{" "}
           <span className="text-lg ml-10 text-gray-200">WATCH TRAILERS</span>
         </p>
