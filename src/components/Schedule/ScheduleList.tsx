@@ -5,7 +5,7 @@ import MoviePanel from "./MoviePanel";
 const ScheduleList = () => {
   const date = useDateStore((state) => state.date);
   return (
-    <div className="text-white rounded-l mt-6">
+    <div className="text-white rounded-l mt-12">
       {date && (
         <div
           className="animate-slideUp bg-blue-100 rounded-lg"

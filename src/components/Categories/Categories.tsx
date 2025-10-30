@@ -12,8 +12,13 @@ const Categories = () => {
         <Category category={category} index={index} key={"key_" + index} />
       ))}
       <span
-        className="flex items-center sm:hidden cursor-pointer"
-        onClick={() => setOpenMobile(true)}
+        className="flex items-center sm:hidden cursor-pointer hover:text-sky-900"
+        onClick={() => {
+          setOpenMobile(true);
+          if (typeof window != "undefined" && window.document) {
+            document.body.style.overflow = "hidden";
+          }
+        }}
       >
         MENU
         <Menu />
