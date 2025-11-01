@@ -4,7 +4,7 @@ import apple from "../../assets/icons/apple.svg";
 
 const Socials = () => {
   return (
-    <div className="mt-2">
+    <div className="mt-2 md:flex md:flex-col md:justify-center md:content-center md:w-[45%]">
       <p className="text-2xl">Join our Socials!</p>
       <div className="flex w-[60%] justify-around mt-2 mb-2">
         <Facebook className="bg-blue-500 text-white rounded-lg w-[30px] h-[30px] p-1 cursor-pointer" />

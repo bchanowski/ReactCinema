@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <div className="bg-sky-50 h-full w-full">
       <div className="p-4">
-        <div>
+        <div className="flex flex-col md:flex-row md:justify-between md:mb-5">
           <Newsletter />
           <Socials />
         </div>
-        <div>
+        <div className="flex flex-col sm:flex-row h-full w-full sm:justify-between md:justify-around">
           {footerData.map((footer, index) => (
             <FooterSection key={index} footerData={footer} />
           ))}
