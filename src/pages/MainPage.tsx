@@ -1,4 +1,5 @@
 import EventsSlider from "../components/Events/EventsSlider";
+import Footer from "../components/Footer/Footer";
 import MoviesCarousel from "../components/MoviesCarousel/MoviesCarousel";
 import NewsSection from "../components/News/NewsSection";
 import MovieSchedule from "../components/Schedule/MovieSchedule";
@@ -19,6 +20,7 @@ const MainPage = () => {
       <MovieSchedule />
       <NewsSection />
       <Upcoming />
+      <Footer />
     </div>
   );
 };
