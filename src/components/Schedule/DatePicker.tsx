@@ -1,4 +1,4 @@
-import { useDateStore } from "../../hooks/useDataStore";
+import { useDateStore } from "../../hooks/useDateStore";
 
 const dates: Date[] = [];
 
@@ -11,7 +11,7 @@ for (let i = 0; i < 7; i++) {
 const DatePicker = () => {
   const setDate = useDateStore((state) => state.setDate);
   return (
-    <div className="flex w-[80%] sm:w-[550px] lg:w-[600px] xl:w-[700px] 2xl:w-[805px] h-[100px] lg:h-[140px] justify-between bg-red-700 rounded-lg absolute left-10 sm:left-20 lg:left-100 xl:left-130 top-57 sm:top-60 lg:top-50 text-white overflow-x-auto z-1  ">
+    <div className="flex w-[80svw] sm:w-[580px] lg:w-[600px] xl:w-[700px] 2xl:w-[805px] h-[115px] lg:h-[140px] justify-between bg-red-700 rounded-lg absolute left-10 lg:left-100 xl:left-130 top-58 sm:top-45 lg:top-50 xl:top-40 text-white overflow-x-auto z-1">
       {dates.map((date, index) => (
         <span
           key={index}

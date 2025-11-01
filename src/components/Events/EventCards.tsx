@@ -20,10 +20,10 @@ const EventCards = () => {
   return (
     <div className="hidden relative w-[700px] h-full sm:flex justify-center items-center flex-shrink-0">
       <CircleArrowLeft
-        className="h-[10%] sm:w-[10%] hover:h-[11%] text-white m-1 cursor-pointer absolute left-0 transition-normal duration-100 ease-in"
+        className="h-[10%] sm:w-[10%] hover:h-[11%] text-white cursor-pointer absolute left-[35px] lg:left-0 transition-normal duration-100 ease-in"
         onClick={showLastEvent}
       />
-      <div className="flex w-[80%] h-full relative items-center overflow-hidden">
+      <div className="flex w-[65%] lg:w-[75%] h-full items-center overflow-hidden lg:mr-2 lg:ml-2">
         {currentEvents.map((event, index) => (
           <>
             <div
@@ -45,7 +45,7 @@ const EventCards = () => {
             <img
               src={"https://image.tmdb.org/t/p/w500/" + event.poster_path}
               className={
-                "absolute left-[0px] 2xl:left-[20px] top-[40px] lg:top-[20px] h-[40%] lg:h-[50%] rounded-lg " +
+                "absolute left-[110px] lg:left-[70px] top-[60px] lg:top-[30px] h-[40%] lg:h-[50%] rounded-lg " +
                 (eventIndex !== index ? "hidden" : "")
               }
             />
@@ -53,7 +53,7 @@ const EventCards = () => {
         ))}
       </div>
       <CircleArrowRight
-        className="h-[10%] hover:h-[11%] sm:w-[10%] text-white m-1 cursor-pointer absolute right-0 transition-normal duration-100 ease-in-out"
+        className="h-[10%] hover:h-[11%] sm:w-[10%] text-white cursor-pointer absolute right-[35px] lg:right-0 transition-normal duration-100 ease-in-out"
         onClick={showNextEvent}
       />
     </div>
