@@ -1,6 +1,7 @@
 import { User } from "lucide-react";
 import { useState } from "react";
 import LoginPopup from "../Login/LoginPopup";
+import RegisterPopup from "../Login/RegisterPopup";
 
 const AccountNav = () => {
   const [openLogin, setOpenLogin] = useState(false);
@@ -30,8 +31,18 @@ const AccountNav = () => {
       >
         Registration
       </span>
-      {openLogin && <LoginPopup close={() => setOpenLogin(false)} />}
-      {openRegister && <LoginPopup close={() => setOpenLogin(false)} />}
+      {openLogin && (
+        <LoginPopup
+          close={() => setOpenLogin(false)}
+          signup={() => setOpenRegister(true)}
+        />
+      )}
+      {openRegister && (
+        <RegisterPopup
+          close={() => setOpenRegister(false)}
+          login={() => setOpenLogin(true)}
+        />
+      )}
     </div>
   );
 };
