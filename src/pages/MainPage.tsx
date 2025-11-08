@@ -20,7 +20,6 @@ const MainPage = () => {
       <MovieSchedule />
       <NewsSection />
       <Upcoming />
-      <Footer />
     </div>
   );
 };

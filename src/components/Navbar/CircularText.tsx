@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 type Props = {
   text: string;
   radius?: number;
@@ -6,7 +8,8 @@ type Props = {
 
 const CircularText = ({ text, radius = 100, letterSpacing = 0 }: Props) => {
   return (
-    <div
+    <Link
+      to="/"
       className="relative inline-flex text-white mt-4 ml-[2svw] md:ml-[12svw] cursor-pointer"
       style={{ width: radius * 2, height: radius * 2 }}
     >
@@ -36,7 +39,7 @@ const CircularText = ({ text, radius = 100, letterSpacing = 0 }: Props) => {
           </textPath>
         </text>
       </svg>
-    </div>
+    </Link>
   );
 };
 

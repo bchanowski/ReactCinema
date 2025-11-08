@@ -2,6 +2,7 @@ import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import EventBtn from "./EventBtn";
 import { useState } from "react";
 import { currentEvents } from "../../data/currentEvents.ts";
+import { Link } from "react-router";
 
 const EventCards = () => {
   const [eventIndex, setEventIndex] = useState(0);
@@ -37,9 +38,12 @@ const EventCards = () => {
               <p className="m-[15px] w-[60%] h-[150px] overflow-hidden text-ellipsis font-[Roboto_Flex] line-clamp-6">
                 {event.desc}
               </p>
-              <p className="w-full text-center text-red-800 cursor-pointer hover:text-red-600">
+              <Link
+                to="/event-page"
+                className="w-full text-center text-red-800 cursor-pointer hover:text-red-600"
+              >
                 Show More...
-              </p>
+              </Link>
               <EventBtn when={event.when} />
             </div>
             <img
