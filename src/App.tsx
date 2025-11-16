@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router";
 import InfoPage from "./pages/InfoPage";
 import EventPage from "./pages/EventPage";
+import MoviePage from "./pages/MoviePage";
 
 function App() {
   const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/info-page" element={<InfoPage />} />
           <Route path="/event-page" element={<EventPage />} />
+          <Route path="/movie" element={<MoviePage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
