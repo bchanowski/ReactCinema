@@ -1,4 +1,5 @@
 import DateSwitcher from "../DateSwitcher/DateSwitcher";
+import ImageSlider from "../ImageSlider/ImageSlider";
 import MoviePanel from "../Schedule/MoviePanel";
 
 const dates: Date[] = [];
@@ -16,6 +17,13 @@ const MovieInfo = () => {
     exclusive: false,
     hours: ["10:30", "15:00"],
   };
+  const images = [
+    "nv1lnF9vhkWXqOz2IzVUseJZAtC.jpg",
+    "vNXGrknx4GjWLgmuNTftWZluIUl.jpg",
+    "2dWxiqcpVfMC9KTNghAVa2NBNZP.jpg",
+    "os3p304JL8M62x6IRai1ic75t60.jpg",
+    "f501NEVFDfHvuXIHuVdrgTb5NNr.jpg",
+  ];
   return (
     <div className="w-[60%] text-white mt-10 h-[600px] flex flex-col justify-around">
       <p>
@@ -37,6 +45,7 @@ const MovieInfo = () => {
           <MoviePanel movie={movie} />
         </div>
       </div>
+      <ImageSlider images={images} />
     </div>
   );
 };
