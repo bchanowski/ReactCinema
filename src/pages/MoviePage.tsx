@@ -10,7 +10,7 @@ const MoviePage = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-center items-start">
         <div>
-          <div className="text-white flex w-[350px] h-[500px] justify-center items-center border-1 border-white rounded-lg m-10">
+          <div className="text-white flex w-[350px] h-[500px] justify-center items-center border-1 border-white rounded-lg m-10 mb-20">
             MOVIE IMAGE
           </div>
           <MovieDetails />

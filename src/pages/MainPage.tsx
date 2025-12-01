@@ -15,7 +15,7 @@ const MainPage = () => {
         </div>
         <EventsSlider />
       </div>
-      {/*<MoviesCarousel />*/}
+      <MoviesCarousel />
       <MovieSchedule />
       <NewsSection />
       <Upcoming />

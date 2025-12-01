@@ -25,7 +25,7 @@ const MovieInfo = () => {
     "f501NEVFDfHvuXIHuVdrgTb5NNr.jpg",
   ];
   return (
-    <div className="w-[60%] text-white mt-10 h-[600px] flex flex-col justify-around">
+    <div className="w-[60%] text-white mt-10 h-full flex flex-col justify-around">
       <p>
         &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
         lacinia odio non lectus interdum venenatis. Cras vulputate nunc a tortor
@@ -38,7 +38,7 @@ const MovieInfo = () => {
         egestas neque. Phasellus tempus dictum tincidunt.
       </p>
       <div>
-        <div className="mt-8 mb-8">
+        <div className="mt-15 mb-8">
           <DateSwitcher dates={dates} />
         </div>
         <div className="h-[180px] bg-sky-50 rounded-lg">

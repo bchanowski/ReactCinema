@@ -10,7 +10,7 @@ const MoviesCarousel = () => {
   });
 
   return (
-    <div className="overflow-hidden relative h-[500px] w-full">
+    <div className="overflow-hidden relative h-[500px] w-full mb-20">
       <div className="flex absolute left-[0px] justify-center items-center h-full w-[200%] animate-slide">
         {isLoading ? (
           "test"
