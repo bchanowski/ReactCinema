@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 type Props = {
   movie: {
     movieId: string;
@@ -27,7 +29,12 @@ const MoviePanel = ({ movie }: Props) => {
             </p>
           )}
         </div>
-        <p className="flex text-sm sm:text-md items-center">TEST MOVIE TITLE</p>
+        <Link
+          className="flex text-sm sm:text-md items-center hover:text-blue-900 cursor-pointer"
+          to="movie"
+        >
+          TEST MOVIE TITLE
+        </Link>
         <p className="text-xs lg:text-sm">Comedy, Action</p>
       </div>
       <div className="flex flex-col sm:flex-row w-[60%] h-full justify-around items-center overflow-hidden">

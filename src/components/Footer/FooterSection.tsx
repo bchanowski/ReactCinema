@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 type Props = {
   footerData: {
     title: string;
@@ -10,9 +12,15 @@ const FooterSection = ({ footerData }: Props) => {
     <div className="mb-2">
       <p className="text-2xl">{footerData.title}</p>
       {footerData.subTitles.map((subtitle, index) => (
-        <p key={index} className="cursor-pointer hover:text-sky-700">
-          {subtitle}
-        </p>
+        <div className="flex">
+          <Link
+            to="info-page"
+            key={index}
+            className="cursor-pointer hover:text-sky-700"
+          >
+            {subtitle}
+          </Link>
+        </div>
       ))}
     </div>
   );

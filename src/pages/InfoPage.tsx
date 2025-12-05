@@ -2,7 +2,7 @@ import Title from "../components/Title/Title";
 
 const InfoPage = () => {
   return (
-    <div className="text-center flex flex-col items-center">
+    <div className="text-center flex flex-col items-center p-10 lg:p-40">
       <Title text="Info Page" side="left" color="white" />
       <p className="w-[60%] text-white mt-10 mb-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
