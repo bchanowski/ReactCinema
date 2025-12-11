@@ -3,12 +3,12 @@ import MovieDetail from "./MovieDetail";
 const MovieDetails = () => {
   const movieData = [
     { title: "Type", value: "Drama" },
-    { title: "Time", value: "125 min" },
-    { title: "Country", value: "Poland" },
-    { title: "Director", value: "Jan Komasa" },
-    { title: "Scenography", value: "Andrzej Iwan" },
-    { title: "Premiere", value: "12th November 2025" },
-    { title: "Main Roles", value: "Justin Timberlake, Małgorzata Sochacka" },
+    { title: "Time", value: "105 min" },
+    { title: "Country", value: "United States" },
+    { title: "Director", value: "Damien Chazelle" },
+    { title: "Scenography", value: "Damien Chazelle" },
+    { title: "Premiere", value: "16th January 2014" },
+    { title: "Main Roles", value: "Miles Teller, J.K. Simmons" },
   ];
   return (
     <div className="w-[350px] m-10">

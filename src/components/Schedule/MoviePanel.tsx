@@ -6,6 +6,7 @@ type Props = {
     premiere: boolean;
     exclusive: boolean;
     hours: string[];
+    image?: string;
   };
 };
 
@@ -13,7 +14,11 @@ const MoviePanel = ({ movie }: Props) => {
   return (
     <div className="h-full lg:h-[180px] w-full flex justify-center items-center text-black border-b-2">
       <img
-        src="https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
+        src={
+          movie.image
+            ? movie.image
+            : "https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
+        }
         className="h-[150px] lg:h-[80%] rounded-lg m-2 lg:mr-5"
       />
       <div className="h-[150px] lg:h-full w-[20%] flex items-center flex-col justify-center relative right-0">

@@ -16,6 +16,8 @@ const MovieInfo = () => {
     premiere: true,
     exclusive: false,
     hours: ["10:30", "15:00"],
+    image:
+      "https://image.tmdb.org/t/p/original/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
   };
   const images = [
     "nv1lnF9vhkWXqOz2IzVUseJZAtC.jpg",
