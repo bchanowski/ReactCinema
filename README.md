@@ -10,6 +10,7 @@ This project is a frontend-only cinema web application built with React and Type
 - React-Query
 - Lucide
 
+You can check the page yourself here - https://reactcinema.bartosz-chanowski.workers.dev/
 ### Main Page
 <img width="1915" height="864" alt="image" src="https://github.com/user-attachments/assets/0b184384-2fca-413a-bead-5043939ff902" />
 <img width="1912" height="905" alt="image" src="https://github.com/user-attachments/assets/432e7ac4-3974-436d-a553-51079ddb99ed" />
